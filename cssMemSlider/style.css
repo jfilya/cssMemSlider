@@ -72,3 +72,17 @@ label:hover .fake{
     background:#ffffff; 
     border: 2px solid #ffffff;	 
 }
+#slide1:checked ~ .controls>[for=slide1]>.fake,
+#slide2:checked ~ .controls>[for=slide2]>.fake,
+#slide3:checked ~ .controls>[for=slide3]>.fake,
+#slide4:checked ~ .controls>[for=slide4]>.fake
+ {
+    border: 2px solid #71abfe;	
+    background: transparent;
+}
+#slide1:checked ~ .controls>[for=slide1]:hover>.fake ,
+#slide2:checked ~ .controls>[for=slide2]:hover>.fake ,
+#slide3:checked ~ .controls>[for=slide3]:hover>.fake ,
+#slide4:checked ~ .controls>[for=slide4]:hover>.fake  {
+    border: 2px solid #ffffff;	 
+}
