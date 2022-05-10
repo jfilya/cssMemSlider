@@ -125,3 +125,20 @@ label:hover .fake{
         transform: translateX(0rem)
       }
 }
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .text-controls{
+        flex-direction: column-reverse;
+    }
+    .text{
+        order: 2;
+    }
+    .controls{
+        justify-content: center;
+    }
+    .text1, .text2, .text3, .text4{
+        text-align: start;
+    }
+}
