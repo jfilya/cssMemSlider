@@ -106,3 +106,22 @@ label:hover .fake{
     transition: .5s;
     opacity:1;
 }
+#slide1:checked ~ .text .text1,
+#slide2:checked ~ .text .text2,
+#slide3:checked ~ .text .text3,
+#slide4:checked ~ .text .text4 {
+    display: block;
+    animation-name: emerging;
+    animation-duration: 1.5s;
+}
+
+@keyframes emerging {
+    0% {
+        opacity: 0;
+        transform: translateX(12.5rem)
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0rem)
+      }
+}
