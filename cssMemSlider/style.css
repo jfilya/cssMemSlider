@@ -86,3 +86,23 @@ label:hover .fake{
 #slide4:checked ~ .controls>[for=slide4]:hover>.fake  {
     border: 2px solid #ffffff;	 
 }
+#slide1:checked ~ .slider {
+    transform: translate(0px);
+    transition: .5s;
+    opacity:1;
+}
+#slide2:checked ~ .slider {
+    transform: translateX(-100%);
+    transition: .5s;
+    opacity:1;
+}
+#slide3:checked ~ .slider {
+    transform: translateX(-200%);
+    transition: .5s;
+    opacity:1;
+}
+#slide4:checked ~ .slider {
+    transform: translateX(-300%);
+    transition: .5s;
+    opacity:1;
+}
