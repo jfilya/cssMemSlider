@@ -5,12 +5,12 @@ body{
     margin:0;
     padding: 0;
     background: #25282a;
-    min-width: 320px;
+    min-width: 20rem;
 }
 .wrapper{
     margin:0 auto;
-    padding: 50px 30px;
-    max-width: 890px;
+    padding: 3.125rem 1.875rem;
+    max-width: 55.625rem;
 }
 .container{
     max-width: 100%;
@@ -33,7 +33,7 @@ img{
 }
 
 .slider{
-    margin-bottom:40px;
+    margin-bottom:2.5rem;
     display: flex;
 }
 .controls{
@@ -42,11 +42,11 @@ img{
 }
 p{
     color:azure;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 label{
-    padding:20px;
+    padding:1rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
