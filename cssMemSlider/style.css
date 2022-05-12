@@ -57,11 +57,7 @@ label{
     border: 0.125rem solid #71abfe;	
 	display: inline-block;
 	height: 1.5rem;
-	position: relative;
 	width: 1.5rem;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
 	border-radius: 50%;
     transition: 0.2s;
 }
@@ -87,7 +83,7 @@ label:hover .fake{
     border: 0.125rem solid #ffffff;	 
 }
 #slide1:checked ~ .slider {
-    transform: translate(0px);
+    transform: translate(0%);
     transition: .5s;
     opacity:1;
 }
