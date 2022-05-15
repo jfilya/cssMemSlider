@@ -108,7 +108,7 @@ label:hover .fake{
 #slide4:checked ~ .text .text4 {
     display: block;
     animation-name: emerging;
-    animation-duration: 1.5s;
+    animation-duration: .5s;
 }
 
 @keyframes emerging {
