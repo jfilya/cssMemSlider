@@ -24,9 +24,16 @@ body{
     max-width: 100%;
     display:block;
 }
-
+.text{
+    display: inline-flex;
+    width: 50%;
+    transition: .5s;
+}
 .text1, .text2, .text3, .text4 {
-    display: none;
+    min-width: 100%;
+    text-align: start;
+    opacity:0;
+    transition: .5s;
 }
 img{  
     max-width: 100%;
@@ -35,10 +42,13 @@ img{
 .slider{
     margin-bottom:2.5rem;
     display: flex;
+    transition: .5s;
 }
 .controls{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    z-index: 5;
 }
 p{
     color:azure;
@@ -84,42 +94,33 @@ label:hover .fake{
 }
 #slide1:checked ~ .slider {
     transform: translate(0%);
-    transition: .5s;
-    opacity:1;
 }
 #slide2:checked ~ .slider {
     transform: translateX(-100%);
-    transition: .5s;
-    opacity:1;
 }
 #slide3:checked ~ .slider {
     transform: translateX(-200%);
-    transition: .5s;
-    opacity:1;
 }
 #slide4:checked ~ .slider {
     transform: translateX(-300%);
-    transition: .5s;
+}
+#slide1:checked ~ .text {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .text {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .text {
+    transform: translateX(-200%);
+}
+#slide4:checked ~ .text {
+    transform: translateX(-300%);
+}
+#slide1:checked ~ .text>.text1,
+#slide2:checked ~ .text>.text2,
+#slide3:checked ~ .text>.text3,
+#slide4:checked ~ .text>.text4 {
     opacity:1;
-}
-#slide1:checked ~ .text .text1,
-#slide2:checked ~ .text .text2,
-#slide3:checked ~ .text .text3,
-#slide4:checked ~ .text .text4 {
-    display: block;
-    animation-name: emerging;
-    animation-duration: .5s;
-}
-
-@keyframes emerging {
-    0% {
-        opacity: 0;
-        transform: translateX(12.5rem)
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0rem)
-      }
 }
 @media screen and (max-width: 768px){
     .container{
@@ -130,6 +131,7 @@ label:hover .fake{
     }
     .text{
         order: 2;
+        width: 100%;
     }
     .controls{
         justify-content: center;
