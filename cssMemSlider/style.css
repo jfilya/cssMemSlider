@@ -122,6 +122,9 @@ label:hover .fake{
 #slide4:checked ~ .text>.text4 {
     opacity:1;
 }
+label:active .fake{
+    transform: scale(0.8);
+}
 @media screen and (max-width: 768px){
     .container{
         flex-direction: column;
